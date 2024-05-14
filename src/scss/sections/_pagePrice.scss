@@ -1,0 +1,297 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+.body__price-background{
+	background-image: url(/img/body/background-price.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center ;
+
+}
+
+.price__block{
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+		&-tittle{
+			font-family: $fontFamilyMonser;
+			font-weight: 700;
+			font-size: 48px;
+			line-height: 50px;			
+			color: $color-white;
+			margin: 0 38px;
+			padding-top: 114px;
+			border-top: 4px solid $gray;
+				@media (min-width:320px) and (max-width:393px){
+					font-size: 28px;
+					line-height: 42px;
+					margin: 0 10px;
+					padding-top: 14px;
+				}
+				@media (min-width:393px) and (max-width:419px){
+					font-size: 32px;
+					line-height: 46px;
+					margin: 0 20px ;
+					padding-top: 14px;
+				}
+				@media (min-width:420px) and (max-width:480px){
+					font-size: 34px;
+					line-height: 48px;
+					margin: 0 20px ;
+					padding-top: 14px;
+				}
+				@media (min-width:481px) and (max-width:566px){
+					font-size: 30px;
+					line-height: 44px;
+					padding-top: 88px;
+				}
+				@media (min-width:567px) and (max-width:768px){
+					font-size: 36px;
+					line-height: 44px;
+					padding-top: 88px;
+				}
+				@media (min-width:632px) and (max-width:768px){
+					font-size: 40px;
+					line-height: 44px;
+					padding-top: 88px;
+				}
+
+				@media (min-width:768px) and (max-width:992px){
+					font-size: 42px;
+					line-height: 44px;
+					margin: 0 20px ;
+					padding-top: 88px;
+				}
+			}
+}
+.body__price{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 60px 0 72px 0;
+	
+	@media (min-width:320px) and (max-width:480px){
+		margin: 32px 0 12px;
+		align-items: center;
+	}
+	@media (min-width: 481px) and (max-width:992px){
+		margin-top: 38px;
+		align-items: center;
+		
+		
+	}
+	@media (min-width: 798px) and (max-width:992px){
+		width: 798px;
+	
+	}
+	@media (min-width: 993px) {
+		flex-wrap: nowrap;
+	
+	
+	}
+	
+
+	
+}
+.price__card{
+	display: flex;
+	flex-direction: column;
+	margin-right: 15px;
+	max-width: 257px;
+	&:last-child{
+		margin-right:0;
+	}
+	@media (min-width:320px) and (max-width:480px){
+	margin: 0 0 18px 0;
+	}
+	@media (min-width:481px) and (max-width:526px){
+		margin-bottom: 18px;
+		}
+	&:nth-child(2){
+			@media (min-width:481px) and (max-width:992px){
+				margin-right: 0px;
+			}
+		}
+		
+
+}
+.card__header{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.06);
+	width: 256px;
+	height: 97px;
+
+	&-title{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color:  #FFFFFF;
+		
+		
+}
+}
+.card__body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(255, 255, 255, 0.03);
+	max-height: 560px;
+	
+	
+	&-number{
+		font-family: $fontFamilyMonser;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 90px;
+		text-transform: uppercase;
+		color: $color-white;
+		padding-top: 30px;
+	}
+	&-currency{
+		font-weight:400;
+	}
+	&-month{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: $color-white;
+	}
+	&-line{
+		width: 60px;
+		height: 5px;
+		background:$main-color;
+		margin: 36px 0;
+	}
+	&-personal-offer{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
+		color: $color-white;
+		margin-bottom: 62px;
+		height: 44px;
+		max-width: 220px;
+	}
+}
+.card__btn{
+	background-color: rgba(255, 255, 255, 0.06);
+	border-radius: 35px;
+	border: none;
+	padding: 15px 38px;
+	margin-bottom: 36px;
+	cursor: pointer;
+	&-text{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 15px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+	
+		
+	}
+	.price__card__big{
+		display: flex;
+		flex-direction: column;
+		margin-right: 15px;
+		width: 299px;
+		height: 560px;
+		@media (min-width:320px) and (max-width:480px){
+			margin-bottom: 18px;
+			}
+			@media (min-width: 481px) and (max-width:526px){
+				margin: 18px 0 18px;
+			}
+			@media (min-width: 527px) and (max-width:992px){
+				margin: 30px 25px 0px -52px;
+			
+			}
+	}
+	.card__header__big{
+		display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.11);
+	width: 299px;
+	height: 111px;
+
+	&-title{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 24px;
+		text-transform: uppercase;
+		color:  #FFFFFF;
+	}
+	}
+	.card__body__big{
+		display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(70, 48, 72, 0.84);
+	width: 299px;
+	height: 449px;
+	&-number{
+		font-family: $fontFamilyMonser;
+		font-weight: 700;
+		font-size: 82px;
+		line-height: 90px;
+		text-transform: uppercase;
+		color: $color-white;
+		padding-top: 30px;
+	}
+	&-currency{
+		font-weight:400;
+	}
+	&-month{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: $color-white;
+	}
+	&-line{
+		width: 60px;
+		height: 5px;
+		background:$main-color;
+		margin: 36px 0;
+	}
+	&-personal-offer{
+		font-family: $fontFamilyMonser;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18px;
+		color: $color-white;
+		margin-bottom: 62px;
+		max-width: 220px;
+	}
+	}
+	.card__btn__big{
+		background-color: rgba(255, 255, 255, 0.06);
+		border-radius: 35px;
+		border: none;
+		padding: 18px 48px;
+		margin-bottom: 36px;
+		cursor: pointer;
+		&-text{
+			font-family: $fontFamilyMonser;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 15px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+	}

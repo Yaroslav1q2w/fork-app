@@ -1,0 +1,182 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+.body__editor{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	&-sentence{
+		font-family: $fontFamilyMonser;
+		font-size: 14px;
+		line-height: 15px;
+		color: $pale-gray;
+		margin-top: 48px;
+		@media (min-width:320px) and (max-width:480px){
+			line-height: 14px;
+		}
+	}
+}
+.editor__header{
+	margin:66px 0 20px;
+	max-width: 906px;
+	&-title{
+		font-family: $fontFamilyMonser;
+		font-weight: 700;
+		font-size: 54px;
+		line-height: 54px;
+		margin-bottom: 36px;
+		text-transform: uppercase;
+		color: $light-gray;
+		@media (min-width:320px) and (max-width:359px){
+			font-size: 26px;
+			line-height: 28px;
+			margin-bottom: 27px;
+		}
+		@media (min-width:360px) and (max-width:380px){
+			font-size: 28px;
+			line-height: 28px;
+			margin-bottom: 27px;
+		}
+		@media (min-width:381px) and (max-width:399px){
+			font-size: 29px;
+			line-height: 29px;
+			margin-bottom: 27px;
+		}
+		@media (min-width:400px) and (max-width:412px){
+			font-size: 30px;
+			line-height: 30px;
+			margin-bottom: 27px;
+		}
+		@media (min-width:413px) and (max-width:438px){
+			font-size: 32px;
+			line-height: 32px;
+			margin-bottom: 27px;
+		}
+		@media (min-width:439px) and (max-width:481px){
+			font-size: 33px;
+			line-height: 33px;
+			margin-bottom: 27px;
+		}
+		@media (min-width: 481px ) and (max-width: 540px){
+			font-size: 33px;
+			line-height: 33px;
+			margin-bottom: 22px;
+			margin-bottom: 27px;
+		}
+		@media (min-width: 541px ) and (max-width: 570px){
+			font-size: 35px;
+			line-height: 35px;
+			margin-bottom: 27px;
+		}
+		@media (min-width: 571px) and (max-width: 614px){
+			font-size: 38px;
+			line-height: 38px;
+			margin-bottom: 27px;
+		}
+		@media (min-width: 615px) and (max-width: 650px){
+			font-size: 39px;
+			line-height: 39px;
+			margin-bottom: 27px;
+		}
+		@media (min-width: 650px) and (max-width: 768px) {
+			font-size: 42px;
+			line-height: 42px;
+			margin-bottom: 27px;
+		}
+	}
+&-text{
+	font-family: $fontLato;
+	font-size: 21px;
+	line-height: 32px;
+	color: $dark-gray;
+	margin-bottom: 20px;
+	@media (min-width:320px) and (max-width:359px){
+		font-size: 14px;
+		line-height: 20px;
+	}
+	@media (min-width:360px) and (max-width:380px){
+		font-size: 15px;
+		line-height: 22px;
+	}
+	@media (min-width:381px) and (max-width:399px){
+		font-size: 16px;
+		line-height: 23px;
+	}
+	@media (min-width:400px) and (max-width:412px){
+		font-size: 16px;
+		line-height: 24px;
+	}
+	@media (min-width:413px) and (max-width:438px){
+		font-size: 18px;
+		line-height: 25px;
+	}
+	@media (min-width:439px) and (max-width:481px){
+		font-size: 20px;
+		line-height: 26px;
+	}
+	@media (min-width: 481px ) and (max-width: 570px){
+		line-height: 28px;
+		line-height: 27px;
+	}
+	@media (min-width: 571px) and (max-width: 614px){
+		line-height: 29px;
+		line-height: 28px;
+	}
+	@media (min-width: 615px) and (max-width: 650px){
+		line-height: 30px;
+	}
+	@media (min-width: 650px) and (max-width: 768px) {
+		line-height: 32px;
+	}
+}
+}
+.editor__information{
+	display: flex;
+	margin-bottom: 70px;
+	@media (min-width:320px) and (max-width:480px){
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		
+	}
+	
+	&-wrapper{
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+		border: 1.5px solid $pale-gray ;
+		border-radius: 5px;
+		&:last-child{
+			margin-right: 0;
+		}
+		&:last-child{
+		@media (min-width:320px) and (max-width:435px){
+			margin-top: 20px;
+		}
+	}
+	}
+	&-left{
+		font-weight:bold;
+		font-size: 21px;
+		line-height: 32px;
+		color: $dark-gray;
+		background: #F4F4F4;
+		border: none;
+		border-right: 1px solid $pale-gray ;
+		cursor: pointer;
+	@media (max-width:769px) {
+		font-size: 20px;
+		line-height: 26px;
+}
+	}
+	&-right{
+		font-weight:bold;
+		margin: 6px ;
+	}
+}	

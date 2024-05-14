@@ -1,0 +1,30 @@
+@import "../fonts/fonts";
+
+@mixin header-menu {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    
+}
+@mixin header-logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 16px;
+    text-transform: uppercase;
+    
+}
+@mixin header__buttom {
+    font-family: $fontFamilyMonser;
+    border: none;
+    background: $main-color;
+    border-radius: 40px;
+    font-weight: 700;
+    //font-size: 21px;
+    line-height: 1;
+    color: $color-white;
+    &:hover {
+        background-color: $color-hover;
+        color:$main-color;
+        border: 2px solid $main-color;
+    }
+}

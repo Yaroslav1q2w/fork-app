@@ -1,0 +1,190 @@
+@import "../mixins/mixins";
+@import "../colors/color";
+@import "../fonts/fonts";
+
+
+.header-section {
+    background-image: url("../img/header/img 1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    
+    .header__body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0 30px 0;
+        margin-bottom: 84px;
+        
+        @media screen and (max-width: 992px) {
+            background: #27262A;
+            height: 118px;
+            padding: 0;
+            margin-bottom: 68px;
+        }
+        @media screen and (max-width: 481px) {
+            height: 103px;
+            margin-bottom: 50px;
+        }
+    
+        .header__logo {
+            @include header-logo;
+            display: flex;
+            align-items: center;
+            margin-right: 312px;
+            text-decoration: none;
+            max-width: 160px;
+            
+            &:hover .logo__img {
+                display: none;
+            }
+            &:hover .logo__img_hover {
+                display: block;
+            }
+            
+            @media screen and (max-width: 992px) {
+                position: absolute;
+                left: 20px;
+                top: 28px;
+            }
+            
+            .logo__text {
+                font-family: $fontLato;
+                padding-left: 18px;
+                text-decoration: none;
+                color: $main-color;
+                
+                @media screen and (max-width: 481px) {
+                    display: none;
+                }
+                
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+        .logo__img_hover {
+            display: none;
+        }
+        .item__menu {
+            display: flex;
+            align-items: center;
+            font-family: $fontFamilyMonser;
+            
+            @media screen and (max-width: 992px) {
+                position: relative;
+                top: 30px;
+            }
+            @media screen and (max-width: 481px) {
+               display: none;
+            }
+            
+            .item__list{
+                @include header-menu;
+                padding-right: 48px;
+                white-space: nowrap;
+                
+    
+                .item__link {
+                    text-decoration: none;
+                    color: $main-color;
+                    
+                    &:hover {
+                        color: $color-hover;
+                    }
+                }
+            }
+        }
+        
+        .header__buttom {
+            @include header__buttom;
+        }
+        
+        .header__buttom_link {
+            font-family: $fontFamilyMonser;
+            min-width: 145px;
+            height: 37px;
+            font-size: 16px;
+            
+            @media screen and (max-width: 992px) {
+                position: absolute;
+                right: 20px;
+                top: 30px;
+            }
+            @media screen and (max-width: 481px) {
+                font-size: 15px;
+                min-width: 119px;
+                height: 37px;
+                right: 92px;
+            }
+        }
+    }
+    
+    .main__desc {
+        text-align: center;
+        
+        .main__title {
+            font-family: $fontFamilyMonser;
+            font-weight: 700;
+            font-size: 82px;
+            line-height: 82px;
+            color: $color-white;
+            padding-bottom: 19px;
+            
+            @media screen and (max-width: 992px) {
+                font-size: 72px;
+            }
+            @media screen and (max-width: 481px) {
+                font-size: 48px;
+            }
+        }
+        .main__text {
+            font-family: $fontLato;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 1;
+            color: $main-color;
+            padding-bottom: 19px;
+            
+            @media screen and (max-width: 992px) {
+                font-size: 24px;
+            }
+            @media screen and (max-width: 481px) {
+                font-size: 18px;
+            }
+        }
+        .main__info {
+            font-family: $fontFamilyMonser;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1;
+            text-transform: uppercase;
+            color: #848E97;
+            padding-bottom: 460px;
+            
+            @media screen and (max-width: 992px) {
+                font-size: 14px;
+            }
+        }
+        .header__buttom_main {
+            position: relative;
+            top: 32px;
+            width: 390px;
+            height: 62px;
+            font-size: 21px;
+            
+            @media screen and (max-width: 481px) {
+                width: 290px;
+                height: 45px;
+                font-size: 18px
+            }
+        }
+        .header__buttom {
+            @include header__buttom;
+        }
+    }
+}
